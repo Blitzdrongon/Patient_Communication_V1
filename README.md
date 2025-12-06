@@ -1,7 +1,7 @@
 # 🤖 Patient Communication AI Assistant
 
-The **Patient Communication AI Assistant** is a Streamlit-based multilingual healthcare support system designed to help patients easily communicate with hospitals or medical services.
-Users can ask health-related questions and receive intelligent responses, with optional **Text-to-Speech** support via the ElevenLabs API.
+The **Patient Communication AI Assistant** is a Streamlit-based multilingual healthcare support system designed to help patients easily communicate with hospitals or medical services.  
+Users can ask health-related questions and receive intelligent responses, with optional **Text-to-Speech** support via ElevenLabs API.
 
 This project is developed as a **Mini Project** by **Tanishq Devagekar**.
 
@@ -9,72 +9,68 @@ This project is developed as a **Mini Project** by **Tanishq Devagekar**.
 
 ## ✨ Features
 
-- 🩺 **AI-Powered Response:** Intelligent healthcare assistance using Google Generative AI.
-- 🌐 **Multilingual Support:** Communicate in English, Kannada, Hindi, and more.
-- 🔊 **Text-to-Speech:** High-quality voice synthesis using ElevenLabs API.
-- 💬 **User-Friendly UI:** Clean and interactive interface built with Streamlit.
-- 🔐 **Secure:** API key management using `.env` for security.
-- 🔄 **Scalable:** Modular design ready for future expansions.
+- 🩺 AI-powered healthcare response system
+- 🌐 Multilingual support (English, Kannada, Hindi and more planned)
+- 🔊 Text-to-Speech with high-quality voice synthesis (ElevenLabs)
+- 💬 User-friendly Streamlit interface
+- 🔐 Secure API key management using `.env`
+- 🔄 Modular and scalable design
 
 ---
 
 ## 🧱 Tech Stack
 
 | Component | Technology |
-| :--- | :--- |
-| **LLM / AI** | Google Generative AI |
-| **Text-to-Speech** | ElevenLabs API |
-| **Frontend UI** | Streamlit |
-| **Programming Language** | Python |
-| **Deployment** | Local/Cloud-ready |
+|----------|------------|
+| LLM / AI | Google Generative AI |
+| Text-to-Speech | ElevenLabs API |
+| Frontend UI | Streamlit |
+| Programming Language | Python |
+| Deployment | Local/Cloud-ready |
 
 ---
 
 ## 🚀 Getting Started
 
-Follow these steps to set up the project locally.
-
-### 🔹 1. Clone the Repository
+### 🔹 1️⃣ Clone the Repository
 
 ```bash
-git clone [[https://github.com/](https://github.com/)<your-username>/<your-repo-name>.git](https://github.com/Blitzdrongon/Patient_Communication_V1.git)
-cd <Patient_Communication_V1>
-🔹 2️⃣ Create and Activate Virtual Environment (venv)
-Windows PowerShell:
+git clone https://github.com/<your-username>/<your-repo>.git
+cd <your-repo>
+```
+###🔹 2. Create and Activate Virtual Environment
+Windows:
+```bash
 python -m venv venv
 .\venv\Scripts\activate
-
-Linux / macOS:
-python -m venv venv
-source venv/bin/activate
-
-🔹 3️⃣ Install Required Packages
+```
+### 🔹 3. Install Required Packages
+```bash
 pip install -r requirements.txt
+```
+###🔹 4. Configure API Keys
+Create a .env file in the project root directory and add your keys.
 
-🔹 4️⃣ Create .env file for API Keys
-
-Create a .env file in the project root and add the following:
-
+File: .env
+```
 GOOGLE_API_KEY=your_google_api_key_here
 
 # ElevenLabs API Configuration (for Text-to-Speech)
 ELEVENLABS_API_KEY=your_elevenlabs_api_key_here
 
 # API Base URLs
-ELEVENLABS_BASE_URL=https://api.elevenlabs.io/v1
+ELEVENLABS_BASE_URL=[https://api.elevenlabs.io/v1](https://api.elevenlabs.io/v1)
+```
+⚠️ Note: Keep this file private. It is added to .gitignore to prevent uploading secrets to GitHub.
 
-
-⚠️ Keep this file private — do not upload to GitHub
-(Already handled via .gitignore)
-
-🔹 5️⃣ Run the Application
+###🔹 5. Run the Application
+```bash
 streamlit run app/ui/streamlit.py
+```
+Once running, open the link provided in your terminal (usually http://localhost:8501).
 
-
-Then open the link from terminal:
-➡️ http://localhost:8501
-
-📂 Project Structure
+###📂 Project Structure
+```bash
 .
 ├── app/
 │   ├── ui/
@@ -85,65 +81,47 @@ Then open the link from terminal:
 │   └── ...
 ├── uploads/                    # Optional folder for user uploads
 ├── test/                       # Optional testing scripts
-├── requirements.txt            # Dependencies
+├── requirements.txt            # Project dependencies
 ├── .env                        # API keys (NOT committed)
-├── .gitignore                  # Ensures secure & clean repo
-├── README.md
+├── .gitignore                  # Git ignore rules
+├── README.md                   # Project documentation
 └── venv/                       # Virtual environment (ignored)
+```
+###🛡️ Security Best Practices
+✔ .env file stores sensitive API keys.
 
-🛡️ Security Best Practices
+✔ Virtual environment (venv/) is not pushed to GitHub.
 
-✔ .env file stores sensitive API keys
-✔ Virtual environment (venv/) not pushed to GitHub
-✔ No access tokens inside source code
-✔ .gitignore handles private data
+✔ No access tokens are hardcoded inside the source code.
 
-🧪 Development Notes
+✔ .gitignore is configured to handle private data.
 
-If new libraries are installed in venv:
+###🧑‍⚕️ Use Cases
+This AI system is designed for:
 
-pip freeze > requirements.txt
+Basic Patient Queries: Answering common health questions.
 
+Hospital Info Assistant: Guiding patients through services.
 
-This keeps dependencies updated for others to use.
+Symptom Guidance: Preliminary advice (non-diagnostic).
 
-🧑‍⚕️ Use Cases
+Multilingual Support: Breaking language barriers in healthcare.
 
-This AI system can be used for:
+###🚧 Future Enhancements
+📱 WhatsApp Bot: Integration for real-time medical support.
 
-Basic patient queries
+🎧 Voice-to-Voice: Full conversational audio mode.
 
-Hospital information assistant
+🏥 Hospital Integration: Connecting to appointment systems.
 
-Preliminary guidance for symptoms
+🌏 Expanded Languages: Support for more regional dialects.
 
-Conversational support in multiple languages
-
-Future WhatsApp chatbot integration
-
-🚧 Future Enhancements
-
-📱 WhatsApp Bot for real-time medical support
-
-🎧 Voice → Voice conversational mode
-
-🏥 Hospital integration for appointments & patient records
-
-🌏 More regional language support
-
-🤝 Contributions & Support
-
-Pull requests and suggestions are always welcome!
-If you encounter a bug or want a new feature →
-Create an Issue on GitHub 🚀
-
-📜 License
-
-This project is for academic and research purposes only.
+🤝 Contributions
+Pull requests and suggestions are welcome! If you encounter a bug or want a new feature, please create an Issue on GitHub.
 
 👨‍💻 Author
-
 🎓 Mini Project — Patient Communication AI Assistant
+
 Developed by: Tanishq Devagekar
 
 📌 Feel free to ⭐ Star the repo if you like the project!
