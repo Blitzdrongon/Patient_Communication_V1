@@ -1,0 +1,33 @@
+# ---- Python cache ----
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environment
+train/
+train
+
+# ---- Secrets ----
+.env
+*.env
+*.key
+*.pem
+
+# ---- Large / generated data ----
+data/
+uploads/
+test/
+huggingface_model/
+offload/
+
+# ---- IDE / editor ----
+.vscode/
+.idea/
+
+# ---- Logs ----
+*.log
+
+# ---- System files ----
+Thumbs.db
+.DS_Store
