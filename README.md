@@ -38,7 +38,7 @@ This project is developed as a **Mini Project** by **Tanishq Devagekar**.
 git clone https://github.com/<your-username>/<your-repo>.git
 cd <your-repo>
 ```
-###🔹 2. Create and Activate Virtual Environment
+### 🔹 2. Create and Activate Virtual Environment
 Windows:
 ```bash
 python -m venv venv
@@ -48,7 +48,7 @@ python -m venv venv
 ```bash
 pip install -r requirements.txt
 ```
-###🔹 4. Configure API Keys
+### 🔹 4. Configure API Keys
 Create a .env file in the project root directory and add your keys.
 
 File: .env
@@ -63,13 +63,13 @@ ELEVENLABS_BASE_URL=[https://api.elevenlabs.io/v1](https://api.elevenlabs.io/v1)
 ```
 ⚠️ Note: Keep this file private. It is added to .gitignore to prevent uploading secrets to GitHub.
 
-###🔹 5. Run the Application
+### 🔹 5. Run the Application
 ```bash
 streamlit run app/ui/streamlit.py
 ```
 Once running, open the link provided in your terminal (usually http://localhost:8501).
 
-###📂 Project Structure
+### 📂 Project Structure
 ```bash
 .
 ├── app/
@@ -87,7 +87,7 @@ Once running, open the link provided in your terminal (usually http://localhost:
 ├── README.md                   # Project documentation
 └── venv/                       # Virtual environment (ignored)
 ```
-###🛡️ Security Best Practices
+### 🛡️ Security Best Practices
 ✔ .env file stores sensitive API keys.
 
 ✔ Virtual environment (venv/) is not pushed to GitHub.
@@ -96,7 +96,7 @@ Once running, open the link provided in your terminal (usually http://localhost:
 
 ✔ .gitignore is configured to handle private data.
 
-###🧑‍⚕️ Use Cases
+### 🧑‍⚕️ Use Cases
 This AI system is designed for:
 
 Basic Patient Queries: Answering common health questions.
@@ -107,7 +107,7 @@ Symptom Guidance: Preliminary advice (non-diagnostic).
 
 Multilingual Support: Breaking language barriers in healthcare.
 
-###🚧 Future Enhancements
+### 🚧 Future Enhancements
 📱 WhatsApp Bot: Integration for real-time medical support.
 
 🎧 Voice-to-Voice: Full conversational audio mode.
@@ -116,7 +116,7 @@ Multilingual Support: Breaking language barriers in healthcare.
 
 🌏 Expanded Languages: Support for more regional dialects.
 
-🤝 Contributions
+### 🤝 Contributions
 Pull requests and suggestions are welcome! If you encounter a bug or want a new feature, please create an Issue on GitHub.
 
 👨‍💻 Author
@@ -125,3 +125,4 @@ Pull requests and suggestions are welcome! If you encounter a bug or want a new 
 Developed by: Tanishq Devagekar
 
 📌 Feel free to ⭐ Star the repo if you like the project!
+
